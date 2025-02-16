@@ -218,6 +218,14 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 #specified number of commits)
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
+#06-SEXTO: Instalação do Plugin virtualenv do ZSH
+#opção do comando git clone: --depth (create a shallow clone with a history truncated to the 
+#specified number of commits)
+
+git clone --depth 1 https://github.com/ohmyzsh/ohmyzsh.git
+cp -r ohmyzsh/plugins/virtualenv ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/virtualenv
+rm -rf ohmyzsh
+
 #Executando o instalador do Plugin FSF do ZSH
 #opção do comando: ~ (til: alias home directory)
 ~/.fzf/install
